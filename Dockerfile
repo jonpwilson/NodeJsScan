@@ -23,7 +23,7 @@ RUN cd /usr/src \
  && apk del python3-dev \
     build-base \
     git \
- && rm -rf /var/cache/apk/*
+ && rm -rf /var/cache/apk/* \
  && pip3 install nodejsscan
 
 ADD start.sh /usr/src/NodeJsScan
