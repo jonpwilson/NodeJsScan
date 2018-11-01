@@ -24,6 +24,7 @@ RUN cd /usr/src \
     build-base \
     git \
  && rm -rf /var/cache/apk/*
+ && pip3 install nodejsscan
 
 ADD start.sh /usr/src/NodeJsScan
 WORKDIR /usr/src/NodeJsScan
